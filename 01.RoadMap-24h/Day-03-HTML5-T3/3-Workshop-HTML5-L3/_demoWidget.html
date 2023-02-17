@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+        body{
+            background-color: #e2e8f0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            column-gap: 30px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .widget_wrapper {
+            background-color: #ffff;
+            width: calc((100% - 60px) / 3);
+        }
+        .widget1 {
+            border-radius: 20px;
+            padding: 15px;
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+        }
+        .widget1 .avatar{
+            flex-basis: 50px;
+            overflow: hidden;
+            height: 50px; 
+            border-radius: 50%;      
+        }
+        .widget1 .icon_wrapper{
+            flex-basis: 30px;
+        }
+        .widget1 .icon_wrapper i{
+            font-size: 30px;
+        }
+        .widget1 .content{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="widget_wrapper widget1">
+            <div class="avatar">
+                <img width="50" height="50" src="https://randomuser.me/api/portraits/women/44.jpg" alt="avartar">
+            </div> 
+            <div class="content">
+                <h3>Yolanda</h3>
+                <p>Web Development</p>
+            </div>
+            <div class="icon_wrapper">
+                <i class="fa-solid fa-camera"></i>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+h1{
+        color: red;
+}
+ /* 768px là Break point */
+@media screen and (max-width: 768px) {
+    h1{
+        color: blue;
+    }
+}
+
+/* Break point Mobile */
+@media screen and (max-width: 480px) {
+    h1{
+        color: brown;
+    }
+
+}
