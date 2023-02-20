@@ -42,14 +42,15 @@
         transition: all .3s ease-in;
         padding: 1rem;
         overflow-y: scroll;
+        position: relative;
     }
 	#parent p {
 		margin: 15px 0;
 	}
 	#box-container {
-		position: sticky;
 		text-align: left;
         border: 2px dashed yellow;
+        z-index: 0
 	}
 
 	.box {
@@ -63,18 +64,17 @@
     .box2 {
         border: solid red 2px;
 		background-color: yellow;
-        /* width: 100%; */
-        /* change value here */
-		/* position: static; */
-		/* position: relative; */
-		/* cần đi chung với top, left, right, bottom */
-		/* position: absolute; */
-		/* top: 40px; left: 40px; */
-
-		/* position: sticky;
-		top: 20px; */
-        position: sticky;
-       
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    .box3{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        background-color:rgba(0,0,255,1);
     }
    
     </style>

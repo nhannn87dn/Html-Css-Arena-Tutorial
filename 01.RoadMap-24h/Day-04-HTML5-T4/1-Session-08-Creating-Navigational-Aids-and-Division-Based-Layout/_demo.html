@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav>ul {
+        background-color: #0e95d8;
+        list-style: none;
+        display: flex;
+        column-gap: 15px;
+      }
+      nav>ul>li {
+        border-right: 1px solid #fff;
+        padding-right: 15px;
+        position: relative;
+        height: 45px;
+      }
+      nav>ul>li:last-child {
+        border-right: none;
+      }
+      nav>ul>li a {
+        color: #fff;
+        padding: 0 0;
+        line-height: 45px;
+        display: block;
+        text-decoration: none;
+      }
+
+      nav>ul>li a img{
+        vertical-align: middle;
+      }
+
+      nav>ul>li .nav_child{
+        display: none;
+      }
+      nav>ul>li:hover .nav_child{
+        display: block;
+        list-style: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        position: absolute;
+        top: 45px;
+        left: -15px;
+        min-width: 160px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, .1);
+
+      }
+      .nav_child li a{
+        color: #333;
+      }
+      nav>ul>li>a:hover {
+        color: #ffd400;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <p>Text based Navigation bar</p>
+      <nav>
+        <ul>
+          <li><a href="/home"> Home </a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog"> Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Graphical Navigation bar</p>
+      <nav>
+        <ul>
+          <li>
+            <a href="/home">
+              <img
+                height="15"
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-phone-96x96-2.png"
+                alt=""
+              />
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/about"
+              ><img
+                height="15"
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-laptop-96x96-1.png"
+                alt=""
+              />
+              About</a
+            >
+          </li>
+          <li>
+            <a href="/blog">
+              <img
+                height="15"
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-tablet-96x96-1.png"
+                alt=""
+              />Blog</a
+            >
+            <ul class="nav_child">
+                <li><a href="">Fashion</a></li>
+                <li><a href="">Tech</a></li>
+                <li><a href="">Sport</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/contact"
+              ><img
+                height="15"
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/icon-smartwatch-96x96-1.png"
+                alt=""
+              />Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+   
+  </body>
+</html>
