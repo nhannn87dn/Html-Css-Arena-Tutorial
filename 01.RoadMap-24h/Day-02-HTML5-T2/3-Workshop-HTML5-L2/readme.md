@@ -4,11 +4,11 @@
 
 - Code thực chiến một ví dụ
 
-## Task 1
+## Task 1: Sử dụng kiến thức session 3, 4
 
-Tao ra một nội dung là một danh sách các yêu cầu cần làm như sau: 
+Tao ra một nội dung là một danh sách bằng thẻ `ol` và `li` các yêu cầu cần làm như sau: 
 
-Tiêu đề: Danh sách yêu cầu
+Tiêu đề: Danh sách yêu cầu (dùng thẻ `h1`)
 
 1. An HTML link, using an absolute URL
 2. An HTML link, using a relative URL
@@ -26,7 +26,7 @@ Tiêu đề: Danh sách yêu cầu
 
 ## Task 2
 
-- Tiêu đề in đậm, font size 32px, màu đen #111 cách danh sách bên dưới 1 khoảng 20px
+- Tiêu đề in đậm, font size 32px, màu đen #111 cách danh sách bên dưới 1 khoảng 50px
 - Nội dung các dòng: font size 14px, màu đen #333
 - Tạo khoảng trống giữa các dòng để nhìn thoáng hơn.
 - Khi rê chuột lên link thì đổi màu xanh #06F

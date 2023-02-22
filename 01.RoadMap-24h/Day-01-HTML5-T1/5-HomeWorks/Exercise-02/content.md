@@ -1,4 +1,5 @@
 HTML là gì? Tìm hiểu về ngôn ngữ HTML từ A đến Z
+
 Năm 1991, trang web đầu tiên trên internet được hình thành bởi Tim Berners Lee và World Wide Web đã ra đời. Tim Berners Lee đã sử dụng HTML để viết nên các trang web và điều này giúp ông có thể chia sẻ dữ liệu với các nhà khoa học nội bộ. Bài viết này chúng ta sẽ tìm hiểu khái niệm HTML là gì và toàn bộ các nội dung liên quan đến HTML.
 
 HTML là gì?

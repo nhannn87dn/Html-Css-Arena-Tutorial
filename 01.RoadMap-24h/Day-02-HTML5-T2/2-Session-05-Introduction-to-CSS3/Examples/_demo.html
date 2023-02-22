@@ -8,36 +8,42 @@
   <title>DEMO CSS3</title>
   <!-- INTERNAL CSS -->
   <style>
-    * {
-      font-family: 'Arial';
+    :root{
+      --main-color: red;
+    }
+    body {
+      color: blue;
+    }
+    /**
+    1. CSS Functions
+    - var()
+    - calc()
+    - rgb(r,g,b)
+    - rgba(r,g,alpha)
+
+    2. Tính kế thừa và tính overwrite trong CSS
+
+    */
+    #heading {
+      color: var(--main-color);
+      background-color: rgba(169,169,169,1);
+      width: calc(100% / 2);
     }
 
-    /* SELECTOR: CLASS */
-    /* GROUP */
-    .square {
-      height: 100px;
-      width: 100px;
-      border-radius: 16px;
+    .mul {
+      color: var(--main-color);
     }
-
-    .square-red {
-      background-color: red;
+    .button {
+      padding: 12px 16px;
+      background-color: blueviolet;
+      color: #fff;
+      border: 1px solid transparent;
+      text-align: center;
+      font-weight: bold;
     }
-
-    /* SELECTOR: TAG */
-    /* ALL DIV */
-    div {
-      border: 4px dashed red;
-    }
-
-    /* SELECTOR: ID */
-    /* ONLY ONE ELEMENT */
-    #avatar {
-      background-color: gray;
-      height: 100px;
-      width: 100px;
-      border-radius: 50px;
-      border: 4px solid yellow;
+    .button-logout {
+        background-color: brown;
+        border-radius: 5px;
     }
   </style>
 
@@ -46,23 +52,23 @@
 </head>
 
 <body>
-  <!-- INLINE CSS (1-3%) -->
-  <!-- RE-USE: NONE, SCOPE: ONE ELEMENT -->
+    <h1 id="heading">Hello Heading 1</h1>
+    <div class="">
+      <button class="button">Login</button>
+      <button class="button button-logout">Logout</button>
+    </div>
+    <ul>
+      <li class="text_red">Html</li>
+      <li>CSs</li>
+      <li>Javascript</li>
+      <li id="nodejs">NodeJs</li>
+    </ul>
+    <p class="text_red">Lorem ipsum dolor sit amet 1</p>
+    <p>Lorem ipsum dolor sit amet 2</p>
+    <p class="mul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias provident et facilis ea inventore modi reprehenderit culpa numquam, hic velit illum eveniet porro natus animi nemo. Placeat quis modi reprehenderit.</p>
+    <a href="https://ecshopvietnam.com/ecshopfashion/tui-vi-balo">Link</a>
 
-  <h1 style="color: red; font-size: 48px;">Welcome to CSS3</h1>
-  <div style="height: 100px; width: 100px; background-color: blue; border-radius: 16px;"></div>
-  <div style="height: 100px; width: 100px; background-color: blue; border-radius: 16px;"></div>
-
-  <!-- INTERNAL CSS (10%) -->
-  <!-- RE-USE: BAD, SCOPE: ONE PAGE -->
-  <div class='square square-red square-green'></div>
-  <div class='square square-red'></div>
-
-  <!-- EXTERNAL CSS (POPULAR) -->
-  <!-- RE-USE: GOOD -->
-  <div class='square-green'></div>
-
-  <div id="avatar"></div>
+   
 </body>
 
 </html>

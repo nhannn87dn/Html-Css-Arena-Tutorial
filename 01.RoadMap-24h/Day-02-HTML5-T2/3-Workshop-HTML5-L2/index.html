@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .link1{
+            color: blue;
+            text-decoration: none;
+        }
+        h1{
+            font-weight: bold;
+            color: #111;
+            margin-bottom: 50px;
+        }
+        li{
+            font-size: 14px;
+            color: #333;
+            /* line-height: 25px; */
+            /* padding: 10px 0; */
+            margin: 10px 0;
+        }
+        li a:hover{
+            color: #06F;
+        }
+        li:nth-child(4){
+            color: red;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px 10px;
+            text-align: center;
+            background-color: #111;
+            border: 2px solid #111;
+            color: #fff;
+            margin: 10px 0;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        .button svg {
+            vertical-align: middle;
+            border-radius: 50px;
+        }
+        .btn-bgwhite {
+            background-color: #fff;
+            color: #111;
+        }
+        .btn-bgfacebook{
+            background-color: #4599ff;
+            border: 2px solid #4599ff;
+        }
+        .wrapper {
+            background-color: #e2e8f0;
+            padding: 30px;
+        }
+        .box{
+            background-color: #fff;
+            padding: 20px 15px;
+            border-radius: 10px;
+        }
+        .box .number {
+            background-color: #111;
+            color: #fff;
+            padding: 2px 10px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Danh sách yêu cầu</h1>
+    <ol>
+        <li>An HTML link, using an <a target="_blank" href="http://24h.com.vn">absolute</a> URL</li>
+        <li>An HTML link, using a <a href="contact.html">relative</a> URL</li>
+        <li><a class="link1" href="">Changing the color of an HTML link</a></li>
+        <li>Removing the underline from HTML links</li>
+        <li>Setting the target of an HTML link</li>
+        <li>Using an HTML image as a link</li>
+        <li>HTML links: using a bookmark</li>
+        <li>An HTML a mailto link</li>
+    </ol>
+    <a href="https://www.thegioididong.com/may-tinh-bang/ipad-mini-6-wifi-cellular-64gb?utm_flashsale=1">
+        <img width="100" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/522/250734/ipad-mini-6-wifi-cellular-pink-1-600x600.jpg" alt="">
+    </a>
+    <div class="wrapper" style="width: 350px;">
+        <div class="box">All your notifications are well turned on <span class="number">3</span></div>
+        <button class="button"><svg class="text-white" width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"></path></svg> Continue width Apple</button>
+        <button class="button btn-bgwhite">Continue width Google</button>
+        <button class="button btn-bgfacebook">Continue width Facebook</button>
+    </div>
+</body>
+
+</html>
