@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        input[type='text'],
+        input[type='email'],
+        input[type='password'],
+        input[type='tel'],
+        input[type='number'],
+        select,
+        textarea {
+            padding: 12px 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: inline-block
+        }
+        input:required:invalid
+        {
+            border: 1px solid red;
+        }
+        label {
+            min-width: 150px;
+            display: inline-block
+        }
+        .vertical_form>.form_row>*{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>horizontal form</h1>
+        <form name="registerForm" action="" method="GET">
+            <div>
+                <label for="user_name"> Username: </label>
+                <input autofocus required placeholder="Vui lòng nhập nhập username" id="user_name" maxlength="255" type="text" name="user_name">
+            </div>
+            <div>
+                <label for="email">  Email:  </label>
+                   <input required id="email" maxlength="255" type="email" name="email">
+               
+            </div>
+            <div>
+                <label for="mobile">   Mobile:</label>
+                   <input required id="mobile" maxlength="10" type="tel" name="mobile">
+               
+            </div>
+            <div>
+                <label for="age">Age: </label>
+                    <input required id="age" min="1" max="200" type="number" name="age">
+                
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                     <input required id="password" maxlength="255" type="password" name="password">
+                
+            </div>
+            <div class="">
+                Sex: 
+                <label for="">
+                    <input type="radio" name="sex" value="male" checked> Nam
+                </label>
+                <label for="">
+                    <input type="radio" name="sex" value="female"> Nữ
+                </label>
+            </div>
+            <div>
+                Sở thích:
+                <label for="">
+                    <input type="checkbox" name="sothich[]" value="movie"> Xem phim
+                </label>
+                <label for="">
+                    <input type="checkbox" name="sothich[]" value="travel"> Du lịch
+                </label>
+                <label for="">
+                    <input type="checkbox" name="sothich[]" value="shopping"> Mua sắm
+                </label>
+                <label for="">
+                    <input type="checkbox" name="sothich[]" value="sports">Thể thao
+                </label>
+                <label for="">
+                    <input type="checkbox" name="sothich[]" value="all">Tất cả
+                </label>
+            </div>
+            <div>
+                <label>   Country:</label>
+                <select name="country" id="country">
+                    <option value="0">---Chọn Country</option>
+                    <option value="vn">Vietnam</option>
+                    <option value="usa">USA</option>
+                </select>
+            </div>
+            <div class="">
+                <label>Content</label>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="file" name="upload" id="upload">
+            </div>
+            <div class="">
+                <!-- <button type="submit" name="submit">Submit</button> -->
+                <input type="submit" value="Submit">
+            </div>
+        </form>  
+    </div>
+    <div class="container">
+        <h1>Vertical form</h1>
+        <form class="vertical_form" action="">
+                <div class="form_row">
+                    <label for="">Username</label>
+                    <input autofocus required placeholder="Vui lòng nhập nhập username" id="user_name" maxlength="255" type="text" name="user_name">
+                </div>
+        </form>
+    </div>
+</body>
+</html>
