@@ -17,7 +17,7 @@
 - I am i Heading 3
 - I am i Heading 4
 
-Chuyển nội dung sau sang kiểu danh sách và Định dạng text với các thẻ cơ bản.
+Định dạng text với các thẻ cơ bản.
 
 - I am Bold tag
 - I am Strong tag
