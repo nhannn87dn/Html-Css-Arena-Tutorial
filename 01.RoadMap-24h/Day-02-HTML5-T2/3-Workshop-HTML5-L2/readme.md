@@ -4,41 +4,32 @@
 
 - Code thực chiến một ví dụ
 
-## Task 1: Sử dụng kiến thức session 3, 4
+## Task 1
 
-Tao ra một nội dung là một danh sách bằng thẻ `ol` và `li` các yêu cầu cần làm như sau: 
+1. Tạo một tập tin html, có tên index.html
 
-Tiêu đề: Danh sách yêu cầu (dùng thẻ `h1`)
+2. Định dạng tài liệu với font chữ: Aria mặc định, độ giãn dòng là 1.4
 
-1. An HTML link, using an absolute URL
-2. An HTML link, using a relative URL
-3. Changing the color of an HTML link
-4. Removing the underline from HTML links
-5. Setting the target of an HTML link
-6. Using an HTML image as a link
-7. HTML links: using a bookmark
-8. An HTML a mailto link
-9. An HTML a mailto link with a subject
-10. An HTML a skype chat link
-11. An HTML a skype call link
-12. An HTML a yahoo chat link
-
-
-## Task 2
-
-- Tiêu đề in đậm, font size 32px, màu đen #111 cách danh sách bên dưới 1 khoảng 50px
-- Nội dung các dòng: font size 14px, màu đen #333
-- Tạo khoảng trống giữa các dòng để nhìn thoáng hơn.
-- Khi rê chuột lên link thì đổi màu xanh #06F
-- Thay đổi màu chữ dòng số 4 thành ĐỎ
-- Thay đổi màu chữ dòng số 10 thành BLUE khác cách trên
+3. Tạo một Tiêu đề chính: 'Học Lập trình HTML Css' với định dạng in đậm, font size 32px, màu đen #111, viết HOA, cách danh sách bên dưới 1 khoảng 50px
+4. Nội dung các dòng: font size 14px, màu đen #333
+- Tạo khoảng cách giữa các dòng để nhìn thoáng hơn.
+- Mỗi dòng cho một border bottom 1px, nét liền, màu xám
+- Gắn một link vào, Khi rê chuột lên link thì đổi màu xanh #06F
+- Thay đổi màu chữ dòng số 2 thành ĐỎ, in đậm, nghiêng và gạch chân
+- Thay đổi màu chữ dòng số 5 thành BLUE khác cách trên đã dùng trên
 - Thay đổi màu chữ dòng số cuối cùng thành ĐỎ
-- Thay đổi màu nền thành #fafafa cho các dòng chẳn
+- Thay đổi màu nền các dòng chẳn thành màu #fafafa  
 
-## Task 3: 
+## Task 2: 
 
 - Định dạng một button bằng thẻ button và css3
-- Định dạng một khối với màu nền, màu chữ, width, height
+
+![button](button-shop.png)
+
+- Định dạng một thẻ với màu nền, màu chữ, width, height để cho ra một hình vuông màu Cycan
+
+- Định dạng một thẻ với màu nền, và cho thẻ đó rộng 50% so với thẻ CHA
 
 
-## Task 4: Gợi ý bài tập Homework
+
+## Task 3: Gợi ý bài tập Homework

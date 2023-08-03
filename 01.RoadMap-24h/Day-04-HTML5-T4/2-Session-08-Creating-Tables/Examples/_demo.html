@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table tr td,table tr th{
+          border: 1px solid #4b20c0;
+          padding: 10px;
+      }
+      table tr td:first-child,table tr th:first-child{
+          width: 50%;
+      }
+      table tr td:nth-child(2), table tr th:nth-child(2) {
+        width: 15%;
+      }
+      table tr td:nth-child(3), table tr th:nth-child(3) {
+        width: 35%;
+      }
+      table tr th {
+        background-color: darksalmon;
+        text-align: center;
+      }
+      table tr td{
+        text-align: center;
+      }
+      table tr:nth-child(even) td {
+        background-color: #d3d3d3;
+      }
+      .marketing {
+        vertical-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th class="name">Name</th>
+          <th class="position">Position</th>
+          <th class="email">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Mỗi dòng là một thẻ tr -->
+        <tr>
+          <td class="name">Anna Fitzgerald</td>
+          <td class="position">Staff Writer</td>
+          <td class="position">example@company.com</td>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+
+          <td rowspan="2" class="marketing">Marketing Manager</td>
+
+          <td>example2@company.com</td>
+        </tr>
+        <tr>
+          <td>Zendaya Grace</td>
+
+          
+
+          <td>example2@company.com</td>
+        </tr>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>3 nhân viên</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
