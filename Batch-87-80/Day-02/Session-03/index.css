@@ -4,8 +4,41 @@
 *{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    color: brown;
 }
 
 h2 {
     color: blue;
+}
+
+.button {
+    background-color: #0088CC;
+    color: #fff;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /* short hand: trên phải dưới trái */
+    padding: 12px 10px 12px 10px;
+
+    /* short hand trên dưới - trái phải */
+    padding: 12px 10px;
+
+    /* short hand 4 hướng bằng nhau */
+    /* padding: 10px; */
+
+}
+
+.button i{
+    color: #fff;
+}
+
+.li-second {
+    margin-top: 15px;
+    margin-bottom: 10px;
 }

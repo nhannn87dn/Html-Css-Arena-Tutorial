@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <!-- EXTERNAL STYLE SHEET  -->
+    <!-- Đặt font chữ trước phần css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- EXTERNAL STYLE SHEET  -->
     <link rel="stylesheet" href="index.css">
     <!-- INTERNAL STYLE SHEET -->
     <style>
-
+        body{
+            /* DÙng cho toàn bộ trang */
+            font-family: 'Lato', sans-serif;
+        }
         /* Type Selector / Tag name selector */
         h1 {
             color: red;
             background-color: yellow;
             font-size: 38px;
+            line-height: 1.5;
             width: 50%;
+            /* DÙng cho font cho thẻ h1 */
+            font-family: 'Lato', sans-serif;
+            /* canh theo chiều ngang */
+            text-align: center;
+            text-transform: uppercase;
         }
 
         h1 {
@@ -23,6 +37,17 @@
             /* Nếu chưa có thì nó thêm mới thuộc tính vào */
             border: 1px solid red
         }
+
+        h2{
+            text-transform: lowercase;
+            text-decoration: line-through;
+        }
+
+        h4 {
+            color: red;
+        }
+
+
         /*
         h1: là selector
         color: property
@@ -41,6 +66,9 @@
             font-style: italic;
             color: #000;
         }
+        .heading4 {
+            color: blue;
+        }
         /* 
         ID selector 
         Nên dùng cho duy nhất 1 thẻ trong 1 file .html
@@ -48,6 +76,50 @@
         #heading {
             color: purple;
         }
+
+        #heading4 {
+            color: orangered;
+        }
+
+        a {
+            color: #222;
+            text-decoration: none;
+        }
+        /* Rê chuột lên link */
+        a:hover {
+            color: orangered;
+        }
+        .link3 {
+            color: crimson;
+        }
+        .link3:hover {
+            color: blue;
+        }
+        .desc {
+            text-indent: 40px;
+            word-spacing: 30px;
+            font-weight:bold; 
+        }
+        .custom_style {
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+
+        }
+       h3{
+        /**
+        1px: nét dày mỏng
+        solid kiểu đường viền
+        black: màu 
+        */
+        /* border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black; */
+        
+        border: 1px solid black
+
+       }
     </style>
 </head>
 <body>
@@ -55,5 +127,29 @@
     <h1 id="heading" class="heading" style="text-decoration: underline;">Heading 1</h1>
     <h2 class="heading">Heading 2</h2>
     <h3 class="heading">Heading 3</h3>
+    <p>Mức độ <span >ưu tiên</span> <span class="custom_style">giảm dần</span></p>
+    <a href="#">Link</a>
+    <a href="#">Link 2</a>
+    <p>
+        <a href="https://css-tricks.com/snippets/css/using-font-face-in-css/">Cách nhúng font riêng</a>
+    </p>
+    <a class="link3" href="https://www.w3schools.com/cssref/index.php">Danh sách các thuộc tính CSS</a>
+     <ol>
+        <li><a href="#">Inline</a> cao nhất</li>
+        <li class="li-second">ID</li>
+        <li>Class</li>
+        <li>Tag name</li>
+         <li>Universal</li>
+     </ol>
+
+     <div class="button">
+        <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+     </div>
+     <div class="button button-second">
+        <i class="fa-solid fa-heart"></i> Add to Colection
+     </div>
+
+    <h4 class="heading4" id="heading4" style="color: darkorchid;">I am Heading 4</h4>
+    <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id porro dolore neque provident officiis autem distinctio consequuntur totam cumque nostrum tenetur voluptatem perspiciatis tempore hic quaerat enim, incidunt a corporis!</p>
 </body>
 </html>
