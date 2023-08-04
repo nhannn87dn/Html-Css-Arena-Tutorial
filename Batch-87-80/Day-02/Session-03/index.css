@@ -1,0 +1,11 @@
+/* EXTERNAL STYLE SHEET */
+
+/* Universal selector */
+*{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: blue;
+}

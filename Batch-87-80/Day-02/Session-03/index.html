@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- EXTERNAL STYLE SHEET  -->
+    <link rel="stylesheet" href="index.css">
+    <!-- INTERNAL STYLE SHEET -->
+    <style>
+
+        /* Type Selector / Tag name selector */
+        h1 {
+            color: red;
+            background-color: yellow;
+            font-size: 38px;
+            width: 50%;
+        }
+
+        h1 {
+            /* Nếu đã tồn tại ==> ghi đè lại */
+            font-size: 22px; /* Đổi từ 38 -> 22 */
+            /* Nếu chưa có thì nó thêm mới thuộc tính vào */
+            border: 1px solid red
+        }
+        /*
+        h1: là selector
+        color: property
+        Sau dấu 2 chấm: là value == red
+        Trong cặp ngoặc nhọn có thể có nhiều cặp property: value
+
+        */
+
+        /*
+         Class selector 
+         Chúng có thể dùng class selector 
+         cho nhiều thẻ cùng 1 lúc
+         Tái sử dụng
+         */
+        .heading {
+            font-style: italic;
+            color: #000;
+        }
+        /* 
+        ID selector 
+        Nên dùng cho duy nhất 1 thẻ trong 1 file .html
+        */
+        #heading {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- INLINE STYLE SHEET -->
+    <h1 id="heading" class="heading" style="text-decoration: underline;">Heading 1</h1>
+    <h2 class="heading">Heading 2</h2>
+    <h3 class="heading">Heading 3</h3>
+</body>
+</html>
