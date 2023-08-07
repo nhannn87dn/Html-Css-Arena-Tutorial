@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         /* Reset */
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto; /* Canh giua man hinh */
+        }
+
+       .mobile_navigation {
+            padding: 15px;
+            border-radius: 10px;
+            background-image: linear-gradient(to right,  #8D2CE2,  #4B01E0);
+            display: flex;
+            width: 400px;
+            align-items: center;
+       }
+
+       .mobile_navigation .item{
+            width: calc(100% / 5);
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+
+       }
+
+       .mobile_navigation .item i{
+        color: #fff;
+       }
+       .mobile_navigation .item:hover span,
+       .mobile_navigation .item.current span{
+            background-color: #fff;
+            border-radius: 50px;
+            padding: 8px;
+       }
+       .mobile_navigation .item:hover i,
+       .mobile_navigation .item.current i{
+        color: #000;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mobile_navigation">
+            <div class="item current">
+                <span><i class="fa-solid fa-house"></i></span>
+            </div>
+            <div class="item">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="item">
+                <span><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="item">
+                <span><i class="fa-solid fa-video"></i></span>
+            </div>
+            <div class="item">
+                <span><i class="fa-solid fa-gear"></i></span>
+            </div>
+        </div>
+        #4B01E0
+        #8D2CE2
+    </div>
+</body>
+</html>

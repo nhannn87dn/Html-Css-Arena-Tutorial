@@ -11,7 +11,11 @@
 <https://widget-components.vercel.app/>
 
 
-## Task 2: Animation Basic
+## Task 2: Transition Basic
+
+Định dạng cho một thẻ a, hover lên thẻ a chuyển màu với transition.
+
+## Task 3: Animation Basic
 
 - Tạo ra một thẻ div: Cao 100px, rộng 100px, nền Blue
 - Gán cho nó một Animation: Chạy từ trái - phải màn hình trong 5s

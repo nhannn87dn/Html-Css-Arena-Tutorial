@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Reset */
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto; /* Canh giua man hinh */
+        }
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: crimson;
+            /* transition setting */
+            transition-property: width, background-color; /* Tên thuộc tính muốn dịch chuyển */
+            transition-duration: 1s; /* time diễn ra dịch chuyển */
+            transition-timing-function: linear; /* hiệu ứng tốc độ dịch chuyển */
+            transition-delay: 0; /* độ trễ */
+        }
+        .box:hover {
+            width:150px;
+            background-color: rgb(186, 5, 41);
+        }
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #111;
+
+            transition-property: color; /* Tên thuộc tính muốn dịch chuyển */
+            transition-duration: 0.3s; /* time diễn ra dịch chuyển */
+            transition-timing-function: linear; /* hiệu ứng tốc độ dịch chuyển */
+            transition-delay: 1s; /* độ trễ */
+        }
+
+        a:hover {
+            color: red;
+        }
+        .parent {
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            position: relative;
+        }
+        .child {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background-color: blue;
+
+            animation-name: child_animation;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-delay: 0;
+            /* lặp lại hiệu ứng */
+            animation-iteration-count: infinite;
+        }
+        @keyframes child_animation {
+            0% {
+                background-color: blue;
+            }
+            25% {
+                background-color: red;
+                top: 0;
+                left: 436px;
+            }
+            50% {
+                background-color: blue;
+                border-radius: 50%;
+                left: 436px;
+                top: 436px;
+            }
+            75% {
+                background-color: blue;
+                left: 0;
+                top: 436px;
+            }
+            100% {
+                background-color: blue;
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div style="margin-bottom: 30px;"><a href="https://aptech-danang.edu.vn/">Aptech</a></div> 
+        <div class="box">
+            box
+        </div>
+
+        <div class="parent">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto; /* Canh giua man hinh */
+        }
+        .attr_single {
+            display: flex; 
+            flex-direction: row; /* cho all item nằm lên 1 hàng */
+            column-gap: 10px; /* Khoảng cách giữa mỗi item */
+            align-items: center; /* Canh theo trục dọc */
+        }
+        .attr_single .attr_value {
+            border:1px solid #ddd;
+            padding: 8px 10px;
+        }
+        .attr_single .attr_value.current {
+            border:1px solid #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="attr_single">
+            <div class="attr_name">Màu sắc</div>
+            <div class="attr_value current">Đen</div>
+            <div class="attr_value">Hồng</div>
+            <div class="attr_value">Xanh</div>
+        </div>
+    </div>
+</body>
+</html>
