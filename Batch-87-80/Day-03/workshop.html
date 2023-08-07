@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Reset */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto; /* Canh giua man hinh */
+        }
+        .widget-wrapper {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .widget-wrapper .avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .widget-wrapper .avatar img{
+            width: 100%;
+            height: auto;
+        }
+        .widget-one .takephoto {
+            width: 30px;
+        }
+        .widget-wrapper .content{
+            width: calc(100% -  74px);
+            padding-left: 20px;
+        }
+        .widget-two .avatar {
+            border: 1px solid #ec4897;
+            padding: 2px;
+        }
+        .widget-two .avatar img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="widget-wrapper widget-one">
+            <div class="avatar">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="avatar women">
+            </div>
+            <div class="content">
+                <strong class="name">Yolanda</strong>
+                <p class="position">Web Development</p>
+            </div>
+            <div class="takephoto">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="widget-wrapper widget-two">
+            <div class="avatar">
+                <img src="https://randomuser.me/api/portraits/women/80.jpg" alt="avatar women">
+            </div>
+            <div class="content">
+                <strong class="name">Yolanda</strong>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
