@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #212121;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+nav {
+    background-color: #FE4A55;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    height: 48px;
+}
+nav ul>li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #E93B47;
+    position: relative;
+}
+
+nav ul>li.has_child::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid #fff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+}
+nav ul>li.has_child {
+    padding-right: 10px;
+}
+nav ul>li>a{
+    color: #fff;
+    padding: 0 15px;
+    font-weight: bold;
+}
+nav ul>li:hover {
+    background-color: #E93B47;
+}
+
+nav ul>li .nav_child {
+    /* mặc định ẩn */
+    display: none;
+}
+
+nav ul>li:hover .nav_child {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top:48px;
+    min-width: 180px;
+    padding: 5px 0;
+    background-color: #fff;
+}
+.nav_child>a{
+    color: #111;
+    padding: 5px 10px;
+}
+.nav_child>a:hover{
+    color: #FE4A55;
+    background-color: #f3f3f3;
+}
+
+.parent {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    position: absolute;
+    right: -30px;
+    top: 0;
+}
+main {
+    height: 2000px;
+}
+
+
+.call_chat {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #f80;
+    color: #fff;
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    left: 30px;
+}
