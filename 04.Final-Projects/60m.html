@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Arial', Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: #212121;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+        input {
+            padding: 10px 12px;
+            border-radius: 4px;
+            border: 1px solid #cecece;
+            width: 100%;
+        }
+        form button[type='submit'] {
+            padding: 10px 12px;
+            border-radius: 4px;
+            width: 100%;
+            background-color: #f80;
+            color: #fff;
+            appearance: none;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        form button[type='submit']:hover {
+           
+            background-color: rgb(217, 116, 0);
+           
+        }
+        .login__wrapper {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 50px auto 0 auto;
+            display: flex;
+            column-gap: 20px;
+        }
+        .login__photo, .login__form {
+            width: calc((100% - 20px) / 2)
+        }
+        .login__photo img {
+            width: 100%;
+            height: auto;
+        }
+        .login__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .field__row {
+            margin: 5px 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .actions {
+            margin-top: 30px;
+        }
+        .field__error .filed__msg {
+            color: rgb(255, 98, 111);
+            font-size: 14px;
+            padding: 10px 0;
+        }
+        .form__footer {
+            display: flex;
+            font-size: 12px;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 5px;
+            margin-top: 20px;
+        }
+        .form__footer a {
+            color: rgb(20, 118, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login__wrapper">
+            <div class="login__photo">
+                <img src="https://img.freepik.com/free-vector/privacy-policy-concept-illustration_114360-7853.jpg?w=740&t=st=1691976597~exp=1691977197~hmac=1ec5a3c592eb3c99960254d9607152ed340912fc98a9fa9fce4cadf17b6fbffc" alt="">
+            </div>
+            <div class="login__form">
+                <form action="">
+                    <div class="form__header">
+                        <h2>Login Form</h2>
+                        <p>Please enter your account to login</p>
+                    </div>
+                    <div class="field__row field__error">
+                        <input placeholder="Enter your email" type="email" name="email">
+                        <p class="filed__msg">Email invalid</p>
+                    </div>
+                    <div class="field__row">
+                        <input  placeholder="Enter your password" type="password" name="password">
+                    </div>
+                    <div class="actions">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="form__footer">
+                        <p>Forgot <a href="#">password</a> ?</p>
+                        <p>Create an account ? <a href="#">Signup</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
