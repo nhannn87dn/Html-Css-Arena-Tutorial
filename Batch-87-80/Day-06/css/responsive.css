@@ -36,16 +36,17 @@ css lại vào trong @media
     .footer-wrapper {
         flex-wrap: wrap;
     }
-    footer .footer-wrapper .item {
+    
+    .footer-wrapper .item {
         width: calc((100% - 10px) / 2);
     }
 }
 
 @media screen and (max-width: 425px) {
-    footer .footer-wrapper {
+    .footer-wrapper {
         row-gap: 30px;
     }
-    footer .footer-wrapper .item {
+   .footer-wrapper .item {
         width: 100%;
     } 
 }

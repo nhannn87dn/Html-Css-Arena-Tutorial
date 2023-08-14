@@ -44,10 +44,10 @@ footer {
     padding: 40px 0;
 }
 
-footer .footer-wrapper {
+.footer-wrapper {
     display: flex;
 }
-footer .footer-wrapper .item {
+.footer-wrapper .item {
     width: 25%;
 }
 
