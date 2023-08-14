@@ -12,7 +12,7 @@ body {
     font-family: 'Arial', Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-image: url('https://wallpaperaccess.com/full/2051525.jpg');
+    background-image: url('https://images.wallpaperscraft.com/image/single/city_night_city_coast_179489_3840x2160.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -36,20 +36,59 @@ header nav ul{
     list-style: none;
     column-gap: 15px;
 }
-
+header nav ul>li {
+    padding: 5px 0;
+}
 header nav ul>li>a{
     color: #fff;
     font-weight: bold;
     padding: 0 15px;
 }
 
-header nav ul>li.current,
-header nav ul>li:hover {
-    background-color:#fff ;
-    border-radius: 10px;
-}
-header nav ul>li.current a,
-header nav ul>li:hover a{
-    color: #111;
+header nav ul>li.current{
+    background-color:#00bbe6 ;
+    border-radius: 20px;
 }
 
+header nav ul>li:hover a{
+    color: #00bbe6;
+}
+
+header nav ul>li.current:hover a{
+    color: #fff;
+}
+
+.table-params {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+}
+.table-params table {
+    border-collapse: collapse;
+}
+.table-params table tr td:nth-child(1) {
+    width: 40%;
+}
+
+.table-params table tr td:nth-child(2) {
+    width: 60%;
+}
+
+.table-params table tr:nth-child(2n+1) {
+    background-color: #f2f2f2;
+}
+
+.table-params table tr td {
+    padding: 5px 10px;
+}
+
+.viewmore {
+    color: #2f80ed;
+    border: 1px solid #2f80ed;
+    border-radius: 6px;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    padding: 10px 0;
+
+}

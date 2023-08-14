@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form class="" name="form_register" action="" method="GET">
+            <div>
+                <label for="username">Username</label>
+                <input id="username" autocomplete="off" minlength="4" maxlength="30" autofocus required placeholder="Vui lòng nhập tên có dấu, ít nhất 4 kí tự" type="text" name="username">
+                <p>Tên tối thiểu 4 kí tự, tối đa 30 kí tự</p>
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input required type="email" name="email">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input required type="password" name="password">
+            </div>
+            <div>
+                <label for="">Mobile</label>
+                <input required pattern="^0([0-9]+){9}$" type="text" name="mobile">
+            </div>
+            <div>
+                <label for="">Telephone</label>
+                <input type="tel" name="telephone">
+            </div>
+            <div>
+                <label for="">Age</label>
+                <input min="18" type="number" name="age">
+                <p>Tuổi tối thiểu là 18 tuổi</p>
+            </div>
+            <div>
+                <label >Gender</label>
+                <label><input type="radio" checked value="male" name="gender"> Male</label>
+                <label><input type="radio" value="female" name="gender"> Female</label>
+            </div>
+
+            <div>
+                <label>Sở thích</label>
+                <label><input type="checkbox" checked value="sport" name="sothich"> Sport</label>
+                <label><input type="checkbox" value="shopping" name="sothich"> Shopping</label>
+                <label><input type="checkbox" value="travel" name="sothich"> Travel</label>
+                <label><input type="checkbox" value="movies" name="sothich"> Movies</label>
+            </div>
+            <div>
+                <label>Province</label>
+                <!-- Muốn chọn nhiều thể để vào một thuộc tính: multiple -->
+                <select  name="province">
+                    <option value="">--Vui lòng chọn chọn Tỉnh/TP</option>
+                    <option value="1">Hà Nội</option>
+                    <option value="2">TP HCM</option>
+                    <option value="3">Đà Nẵng</option>
+                </select>
+            </div>
+            <div>
+                <label>Content</label>
+                <textarea maxlength="255" name="content" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>UpLoad</label>
+                <input type="file" name="upload">
+            </div>
+            <div>
+                <label>ReadOnly</label>
+                <input readonly type="text" value="Giá trị để xem" name="readonly">
+            </div>
+            <div>
+                <label>Hidden</label>
+                <input type="hidden" value="1" name="userId">
+            </div>
+            
+                <button type="submit">Submit</button>
+                <button type="button">OK</button>
+                <button disabled type="button">Disabled</button>
+                <button type="reset">Reset</button>
+            
+        </form>
+    </div>
+    
+</body>
+</html>

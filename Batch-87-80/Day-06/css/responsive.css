@@ -1,0 +1,57 @@
+/*
+Hướng Desktop First
+
+thì sắp xếp vị thứ các breakpoint là giảm dần
+
+*/
+
+
+/*
+Tại điểm gảy (breakpoint) thì bạn muốn
+thay đổi bố cục như thế nào thì
+css lại vào trong @media 
+*/
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    .header-middle-wrapper,
+    .main_content_wrapper {
+        flex-direction: column;
+    }
+
+    .main-content {
+        order: 1;
+        width: 100%;
+    }
+
+    .sidebar {
+        order: 2;
+        width: 100%;
+    }
+
+    .products_list .item {
+        width: calc((100% - 10px) / 2);
+    }
+    .footer-wrapper {
+        flex-wrap: wrap;
+    }
+    footer .footer-wrapper .item {
+        width: calc((100% - 10px) / 2);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer .footer-wrapper {
+        row-gap: 30px;
+    }
+    footer .footer-wrapper .item {
+        width: 100%;
+    } 
+}
+
+@media screen and (max-width: 375px) {
+    .products_list .item {
+        width: 100%
+    }
+}
